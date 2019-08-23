@@ -13,5 +13,8 @@ setup(
     author_email='leafwind.cs@gmail.com',
     url='https://github.com/leafwind/jieba',
     license="MIT",
-    packages=find_packages()
+    keywords='NLP,tokenizing,Chinese word segementation',
+    packages=find_packages(),
+    package_dir={'jieba_zh_tw':'jieba_zh_tw'},
+    package_data={'jieba_zh_tw':['*.*','finalseg/*','analyse/*','posseg/*','extra_dict/*']}
 )

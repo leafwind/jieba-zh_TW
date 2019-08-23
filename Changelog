@@ -1,4 +1,9 @@
+2019-08-23: fork ldkrsi/jieba-zh_TW
+1. 更改 package 資料夾名稱 jieba > jieba_zh_tw 使得能用 import jieba_zh_tw 而不會跟原始簡體 jieba 衝突
+2. 增加 setup.py 使得 pip install 可以直接安裝
+
 2016-07-18: fork jieba(0.38)
 1. 替換zh-tw版本詞庫(dict.txt)
 2. 替換zh-tw版本HMM機率表
+
 

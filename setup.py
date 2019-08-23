@@ -16,5 +16,5 @@ setup(
     keywords='NLP,tokenizing,Chinese word segementation',
     packages=find_packages(),
     package_dir={'jieba_zh_tw':'jieba_zh_tw'},
-    package_data={'jieba_zh_tw':['*.*','finalseg/*','analyse/*','posseg/*','extra_dict/*']}
+    package_data={'jieba_zh_tw':['*.*','finalseg/*','analyse/*','posseg/*','zh_tw_extra/*']}
 )

@@ -10,5 +10,8 @@ setup(
     version='1.0.0',
     description='jieba installable package for zh_TW',
     author='leafwind',
+    author_email='leafwind.cs@gmail.com',
+    url='https://github.com/leafwind/jieba',
+    license="MIT",
     packages=find_packages()
 )

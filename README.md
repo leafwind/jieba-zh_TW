@@ -3,17 +3,46 @@
 結巴(jieba)斷詞台灣繁體版本
 
 
-## 原理
+## 與各版本的差異說明
 
-採用和原始jieba相同的演算法，替換其詞庫及HMM機率表製做出針對台灣繁體的jieba斷詞器
+ldkrsi 版本：採用和原始jieba相同的演算法，替換其詞庫及HMM機率表製做出針對台灣繁體的jieba斷詞器
+
+leafwind 版本：沿用同樣繁體詞庫以及 HMM 機率表，並增加 `setup.py`，再更改資料夾結構，讓使用上更容易
+
+
 
 
 ## 使用說明
 
 * 相容python2和python3
-* 將jieba資料夾放在你程式的資料夾底下
-* `import jieba`
 
+### 安裝
+
+#### 直接使用 pip install 安裝
+
+```
+pip install https://github.com/leafwind/jieba-zh_TW.git#egg=jieba_zh_tw
+)
+```
+
+#### 或寫在 `requirements.txt`
+
+```
+-e git+https://github.com/leafwind/jieba-zh_TW.git#egg=jieba_zh_tw
+```
+
+### import
+
+### 直接 import
+
+- `import jieba_zh_tw as jieba`
+
+### 同時 import 簡體與正體版本
+
+```
+import jieba  # 原始簡體中文版 jieba
+import jieba_zh_tw as jiebatw  # 正體中文版 jieba
+```
 
 ## 程式碼範例
 
@@ -61,7 +90,3 @@ print("|".join(seg_list))
 
 使用本份程式碼請遵守[中研院斷詞服務之服務條款](http://ckipsvr.iis.sinica.edu.tw/terms.htm)其中的衍生資料相關規定
 
-
-## 一些問題
-
-詳見我Blog上的這篇文章：[關於結巴(Jieba)斷詞的幾個問題](https://blog.ldkrsi.in/%E9%97%9C%E6%96%BC%E7%B5%90%E5%B7%B4%E6%96%B7%E8%A9%9E%E7%9A%84%E5%B9%BE%E5%80%8B%E5%95%8F%E9%A1%8C/)

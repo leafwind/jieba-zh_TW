@@ -14,6 +14,9 @@ setup(
     url='https://github.com/leafwind/jieba',
     license="MIT",
     keywords='NLP,tokenizing,Chinese word segementation',
+    install_requires=[
+        "jieba",
+    ],
     packages=find_packages(),
     package_dir={'jieba_zh_tw':'jieba_zh_tw'},
     package_data={'jieba_zh_tw':['*.*','finalseg/*','analyse/*','posseg/*','zh_tw_extra/*']}

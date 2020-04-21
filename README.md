@@ -28,7 +28,7 @@ pip install https://github.com/leafwind/jieba-zh_TW.git#egg=jieba_zh_tw
 #### 或寫在 `requirements.txt`
 
 ```
--e git+https://github.com/leafwind/jieba-zh_TW.git#egg=jieba_zh_tw
+git+https://github.com/leafwind/jieba-zh_TW.git#egg=jieba_zh_tw
 ```
 
 ### import
